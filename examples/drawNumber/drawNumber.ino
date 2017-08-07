@@ -5,7 +5,7 @@
 */
 
 #include <stdint.h>
-#include <TFTv2.h>
+#include <TFTv2LS.h>
 #include <SPI.h>
 
 void setup()
@@ -16,17 +16,17 @@ void setup()
     
     Tft.drawNumber(1024, 0, 0, 1, RED);             // draw a integer: 1024, Location: (0, 0),  size: 1, color: RED
     
-    Tft.drawNumber(1024, 0, 20, 2, BLUE);           // draw a integer: 1024, Location: (0, 20), size: 2, color: BLUE
+    Tft.drawNumber(1024, 0, 15, 2, BLUE);           // draw a integer: 1024, Location: (0, 15), size: 2, color: BLUE
     
-    Tft.drawNumber(1024, 0, 50, 3, GREEN);          // draw a integer: 1024, Location: (0, 50), size: 3, color: GREEN
+    Tft.drawNumber(1024, 0, 40, 3, GREEN);          // draw a integer: 1024, Location: (0, 40), size: 3, color: GREEN
     
-    Tft.drawNumber(1024, 0, 90, 4, BLUE);           // draw a integer: 1024, Location: (0, 90), size:4, color: BLUE
+    Tft.drawNumber(1024, 0, 80, 4, BLUE);           // draw a integer: 1024, Location: (0, 80), size:4, color: BLUE
     
-    Tft.drawFloat(1.2345, 0, 150, 4, YELLOW);       // draw a float number: 1.2345, Location: (0, 150), size: 4, color: YELLOW
+    Tft.drawFloat(1.2345, 0, 120, 4, YELLOW);       // draw a float number: 1.2345, Location: (0, 120), size: 4, color: YELLOW
     
-    Tft.drawFloat(1.2345, 2, 0, 200, 4, BLUE);      // draw a float number: 1.2345: Location: (0, 200), size: 4, decimal: 2, color: BLUE
+    Tft.drawFloat(1.2345, 2, 0, 160, 4, BLUE);      // draw a float number: 1.2345: Location: (0, 160), size: 4, decimal: 2, color: BLUE
     
-    Tft.drawFloat(1.2345, 4, 0, 250, 4, RED);       // draw a float number: 1.2345 Location: (0, 250), size: 4, decimal: 4, color: RED
+    Tft.drawFloat(1.2345, 4, 0, 200, 4, RED);       // draw a float number: 1.2345 Location: (0, 200), size: 4, decimal: 4, color: RED
     
 }
 
