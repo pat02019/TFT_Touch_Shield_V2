@@ -13,7 +13,7 @@
 #include <SD.h>
 #include <SPI.h>
 
-#include "TFTv2.h"
+#include <TFTv2LS.h>
 
 #define MAX_BMP         10                      // bmp file num
 #define FILENAME_LEN    20                      // max file name length
@@ -21,8 +21,8 @@
 
 const int PIN_SD_CS = 4;                        // pin of sd card
 
-const int __Gnbmp_height = 320;                 // bmp hight
-const int __Gnbmp_width  = 240;                 // bmp width
+const int __Gnbmp_height = 240;                 // bmp hight
+const int __Gnbmp_width  = 320;                 // bmp width
 
 unsigned char __Gnbmp_image_offset  = 0;        // offset
 
