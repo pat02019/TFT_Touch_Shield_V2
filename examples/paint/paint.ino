@@ -1,7 +1,7 @@
 // Paint application - Demonstate both TFT and Touch Screen
 #include <stdint.h>
 #include <SeeedTouchScreen.h>
-#include <TFTv2.h>
+#include <TFTv2LS.h>
 #include <SPI.h>
 
 int ColorPaletteHigh = 30;
@@ -32,8 +32,8 @@ void loop()
 
     //map the ADC value read to into pixel co-ordinates
 
-    p.x = map(p.x, TS_MINX, TS_MAXX, 0, 240);
-    p.y = map(p.y, TS_MINY, TS_MAXY, 0, 320);
+    p.x = map(p.x, TS_MINX, TS_MAXX, 0, 320);
+    p.y = map(p.y, TS_MINY, TS_MAXY, 0, 240);
 
     // we have some minimum pressure we consider 'valid'
     // pressure of 0 means no pressing!
