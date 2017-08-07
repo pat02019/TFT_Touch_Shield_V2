@@ -18,9 +18,13 @@
  License along with this library; if not, write to the Free Software
  Foundation, Inc.,51 Franklin St,Fifth Floor, Boston, MA 02110-1301 USA
 
+ Edit: August 7, 2017 by Patrick Callahan
+ Renamed file to add LS as a suffix
+ Changed data for Memory Access Control to rotate the screen to landscape
+
 */
 
-#include <TFTv2.h>
+#include <TFTv2LS.h>
 #include <SPI.h>
 #define FONT_SPACE 6
 #define FONT_X 8
@@ -109,7 +113,7 @@ void TFT::TFTinit (void)
     WRITE_DATA(0XB7);
 
     sendCMD(0x36);                                                      /* Memory Access Control        */
-    WRITE_DATA(0x08);
+    WRITE_DATA(0xA8);
 
     sendCMD(0x3A);
     WRITE_DATA(0x55);
@@ -281,8 +285,8 @@ void TFT::fillScreen(void)
 #if defined(__LINKIT_ONE__)
 	memset(bg_buffer, 0, 153600);
 #endif
-    Tft.setCol(0, 239);
-    Tft.setPage(0, 319);
+    Tft.setCol(0, 319);
+    Tft.setPage(0, 239);
     Tft.sendCMD(0x2c);                                                  /* start to write to display ram */
 
     TFT_DC_HIGH;
