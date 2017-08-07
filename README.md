@@ -1,3 +1,11 @@
+TFT_Touch_Shield_V2_Landscape
+---------------------------------------------------------
+This library will rotate the screen 90 degrees to be viewed in landscape mode. This results in the X range from 0 to 319 and the Y range from 0 to 239. The point (0,0) is located at the top left corner. X increases from left to right and Y increases from top to bottom.
+
+The library was created and verified with Arduino IDE 1.8.3 using an Arduino UNO R3, Arduino 101, and Elegoo Mega2560 R3. The examples were also updated to use the landscape orientation.
+
+This library was cloned from the Seeed Studio site and the original Readme is shown below. Because it is landscape only, the suffix LS was added to the filenames. The library for the touch screen from Seeed Studio is usable without any modifications as of August 7, 2017.
+
 TFT_Touch_Shield_V2
 ---------------------------------------------------------
 
