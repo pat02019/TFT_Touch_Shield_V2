@@ -4,7 +4,7 @@
     drawRectangle(INT16U poX, INT16U poY, INT16U length,INT16U width,INT16U color);
 */
 #include <stdint.h>
-#include <TFTv2.h>
+#include <TFTv2LS.h>
 #include <SPI.h>
 
 void setup()
