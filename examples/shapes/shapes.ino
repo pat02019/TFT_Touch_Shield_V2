@@ -1,7 +1,7 @@
 // Draw Boxes - Demonstrate drawRectangle and fillRectangle
 
 #include <stdint.h>
-#include <TFTv2.h>
+#include <TFTv2LS.h>
 #include <SPI.h>
 
 void setup()
