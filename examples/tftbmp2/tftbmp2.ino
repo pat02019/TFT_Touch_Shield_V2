@@ -36,7 +36,7 @@
 #include <SD.h>
 #include <SPI.h>
 
-#include "TFTv2.h"
+#include <TFTv2LS.h>
 
 #define MAX_BMP         25      // Maximum number of BMP files
 #define FILENAME_LEN    16      // Maximum file name length
